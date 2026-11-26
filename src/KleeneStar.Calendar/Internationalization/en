@@ -1,0 +1,242 @@
+﻿# en-US language resource file
+plugin.name=KleeneStar.Calendar
+plugin.description=Appointments and calendars for the KleeneStar platform: series, templates, participants with their answers, resource bookings, conflicts, included calendars and WQL queries, iCalendar import and export.
+
+# kind and calendar
+kind.label=Calendar
+calendar.more.label=Calendar
+calendar.move.refused=The appointment cannot be moved here.
+calendar.move.series=An occurrence of a series is moved in the appointment's dialog, not by dragging.
+calendar.move.layer=This entry belongs to another calendar and is changed there.
+calendar.delete.refused=Appointments are deleted from their page.
+upcoming.label=Coming up
+upcoming.none=Nothing in the next days
+
+# layers
+source.label=Calendars
+source.own=The appointments of this workspace
+source.add.label=Include calendar…
+source.add.title=Include a calendar
+source.add.submit=Include
+source.add.done=The calendar "{0}" is included.
+source.name.label=Name
+source.name.placeholder=Name of the calendar
+source.name.required=Give the calendar a name.
+source.kind.label=Show
+source.kind.workspace=The appointments of a workspace
+source.kind.query=The objects of a WQL query
+source.kind.required=Choose what the calendar shows.
+source.color.label=Colour
+source.workspace.label=Workspace
+source.workspace.help=The appointments of this workspace are shown, as far as each reader may see them.
+source.workspace.required=Choose a workspace you may read.
+source.workspace.self=The workspace's own appointments are always shown.
+source.query.label=WQL query
+source.query.help=Appointments are shown at their time, other objects (issues, for instance) on the days of the start and end date fields of their class.
+source.query.placeholder=Kind = "issue" AND Assignee = currentUser()
+source.query.required=Write the query.
+source.query.invalid=The query is not valid WQL.
+source.invalid=The calendar is not valid.
+source.delete.title=Remove calendar
+source.delete.submit=Remove
+source.delete.prolog=Remove the calendar "{0}" from this calendar?
+source.delete.description=Only the layer is removed; the appointments and objects it showed stay where they are.
+source.delete.done=The calendar "{0}" was removed.
+
+# appointment dialog
+appointment.add.label=New appointment
+appointment.add.title=New appointment
+appointment.add.submit=Plan
+appointment.add.done={0} "{1}" is planned.
+appointment.new.title=New appointment
+appointment.edit.label=Edit appointment
+appointment.edit.title=Edit appointment
+appointment.edit.submit=Save
+appointment.edit.done={0} "{1}" was saved.
+appointment.tab.general=Appointment
+appointment.tab.series=Series
+appointment.tab.participants=Participants
+appointment.tab.resources=Resources
+appointment.summary.label=Title
+appointment.summary.placeholder=What is the appointment about?
+appointment.summary.required=Give the appointment a title.
+appointment.class.label=Type
+appointment.class.help=The appointment class the appointment is created in.
+appointment.class.required=Choose a type you may create appointments in.
+appointment.start.label=Start
+appointment.start.required=Enter the start date.
+appointment.starttime.label=from
+appointment.end.label=End
+appointment.endtime.label=until
+appointment.end.before=The end lies before the start.
+appointment.allday.label=All day
+appointment.allday.help=The appointment covers whole days; the times are not used.
+appointment.timezone.label=Time zone
+appointment.timezone.help=The times are entered in this zone, and a series repeats in it.
+appointment.autoclose.label=Close when over
+appointment.autoclose.help=Moves the appointment into its closing state once its last occurrence is over.
+appointment.location.label=Location
+appointment.location.placeholder=Room, address or meeting link
+appointment.description.label=Description
+appointment.repeat.label=Repeats
+appointment.repeat.none=Does not repeat
+appointment.repeat.daily=Daily
+appointment.repeat.weekly=Weekly
+appointment.repeat.monthly=Monthly
+appointment.repeat.yearly=Yearly
+appointment.repeat.custom=Custom rule
+appointment.interval.label=Every
+appointment.interval.help=1 repeats every day, week, month or year; 2 every second one.
+appointment.weekdays.label=On
+appointment.weekdays.help=The weekdays of a weekly series; none means the weekday of the start.
+appointment.until.label=Ends on
+appointment.until.help=The last day of the series. Leave empty for a series without end.
+appointment.count.label=Ends after
+appointment.count.help=The number of occurrences; takes precedence over the end date.
+appointment.rule.label=Rule (RFC 5545)
+appointment.rule.help=A recurrence rule as calendars write it, for instance FREQ=MONTHLY;BYDAY=2TU (every second Tuesday). Used with "Custom rule".
+appointment.rule.invalid=The rule is not a recurrence rule of RFC 5545 this calendar understands.
+weekday.mo=Monday
+weekday.tu=Tuesday
+weekday.we=Wednesday
+weekday.th=Thursday
+weekday.fr=Friday
+weekday.sa=Saturday
+weekday.su=Sunday
+
+# templates
+template.label=Template
+template.help=Takes the title, description, time, duration, location, series, participants and resources the template presets.
+template.none=No template
+template.header=From template
+
+# participants
+participant.label=Participants
+participant.help=The accounts invited. They see the appointment, follow it and answer.
+participant.placeholder=Invite people…
+participant.header=Participants
+participant.none=Nobody is invited.
+participant.you=you
+participant.guest=guest
+guest.label=Guests
+guest.help=People without an account, separated by semicolons: a name, a mail address or Name <mail>.
+response.pending=No answer yet
+response.accepted=Accepted
+response.tentative=Accepted with reservations
+response.declined=Declined
+role.required=Required
+role.optional=Optional
+role.chair=Organizer
+
+# resources
+resource.label=Resources
+resource.help=Rooms, devices, vehicles - the assets of the installation. A resource can be booked once at a time.
+resource.placeholder=Book a resource…
+resource.header=Resources
+
+# conflicts
+conflict.title=Conflicts
+conflict.none=No conflicts.
+conflict.checking=Checking conflicts…
+conflict.participant={0} attends {2} at {1}.
+conflict.resource={0} is booked for {2} at {1}.
+conflict.private=another appointment
+conflict.override=Book it anyway to override.
+conflict.ignore.label=Book despite conflicts
+conflict.ignore.help=Books resources even when they are booked for another appointment at the same time.
+
+# answer
+respond.title=Answer
+respond.submit=Answer
+respond.accepted=Accept
+respond.tentative=With reservations
+respond.declined=Decline
+respond.response.label=Your answer
+respond.required=Choose an answer.
+respond.comment.label=Reservation or reason
+respond.comment.help=What the organizer should know: under which condition you come, or why not.
+respond.comment.placeholder=I can only join from 10:30.
+respond.reservation.required=Say which reservation you have.
+respond.done.accepted=You accepted "{0}".
+respond.done.tentative=You accepted "{0}" with reservations.
+respond.done.declined=You declined "{0}".
+
+# schedule card
+schedule.header=Schedule
+schedule.none=The appointment has no time yet. Edit it to plan one.
+schedule.when=When
+schedule.series=Repeats
+schedule.next=Next occurrence
+schedule.next.none=None - the series is over
+schedule.exceptions=Occurrences removed
+schedule.zone=Planned in
+schedule.location=Location
+schedule.organizer=Organizer
+schedule.autoclose=Closing
+schedule.autoclose.on=Closed automatically when over
+schedule.autoclose.off=Stays open when over
+schedule.autoclose.closed=Closed automatically on {0}
+
+# series in words
+recurrence.daily=Daily
+recurrence.daily.every=Every {0} days
+recurrence.weekly=Weekly
+recurrence.weekly.every=Every {0} weeks
+recurrence.monthly=Monthly
+recurrence.monthly.every=Every {0} months
+recurrence.yearly=Yearly
+recurrence.yearly.every=Every {0} years
+recurrence.on=on {0}
+recurrence.day=on day {0}
+recurrence.in=in {0}
+recurrence.last=last {0}
+recurrence.count={0} times
+recurrence.until=until {0}
+
+# exclude
+exclude.label=Remove occurrence
+exclude.title=Remove an occurrence
+exclude.submit=Remove
+exclude.occurrence.label=Occurrence
+exclude.occurrence.help=Only this occurrence is removed; the series goes on.
+exclude.required=Choose an occurrence of the series.
+exclude.done=The occurrence on {0} was removed.
+
+# import and export
+import.label=Import iCalendar…
+import.title=Import iCalendar file
+import.submit=Import
+import.class.help=New appointments are created in this type; appointments imported before are updated.
+import.file.label=File
+import.file.help=An .ics file, as Outlook, Google, Apple and Thunderbird export it.
+import.content.label=Content
+import.content.help=Filled from the file - or paste the content of a calendar file.
+import.empty=Choose a calendar file or paste its content.
+import.done={0} appointments created, {1} updated, {2} skipped.
+export.label=Export as iCalendar
+export.layers.label=Export with included calendars
+export.format.label=iCalendar
+export.format.description=An event for Outlook, Google, Apple or Thunderbird.
+export.format.content=Time, series, location, participants and answers; other objects on their dates
+
+# workspace template
+template.teamcalendar.name=Team calendar
+template.teamcalendar.description=Meetings and dates of a team in a calendar: series, participants with their answers, bookable resources and conflicts.
+template.teamcalendar.class.meeting=A meeting, a date or an event of the team.
+template.field.description=What the appointment is about.
+template.field.status=Where the appointment stands.
+template.field.labels=Keywords for filtering and grouping.
+template.workflow.name=Appointment
+template.workflow.description=From planned to held or cancelled; closed automatically when over.
+template.status.planned=Planned
+template.status.planned.description=The appointment is planned.
+template.status.confirmed=Confirmed
+template.status.confirmed.description=The appointment takes place as planned.
+template.status.held=Held
+template.status.held.description=The appointment took place.
+template.status.cancelled=Cancelled
+template.status.cancelled.description=The appointment does not take place.
+template.transition.confirm=Confirm
+template.transition.hold=Mark as held
+template.transition.cancel=Cancel
+template.transition.reschedule=Plan again

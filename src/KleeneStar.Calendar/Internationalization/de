@@ -1,0 +1,242 @@
+﻿# de-DE language resource file
+plugin.name=KleeneStar.Calendar
+plugin.description=Termine und Kalender für die KleeneStar-Plattform: Serientermine, Vorlagen, Teilnehmer mit Zu- und Absagen, Ressourcenbuchungen, Terminkonflikte, eingebundene Kalender und WQL-Abfragen, Import und Export im iCalendar-Format.
+
+# kind and calendar
+kind.label=Kalender
+calendar.more.label=Kalender
+calendar.move.refused=Der Termin kann nicht hierher verschoben werden.
+calendar.move.series=Ein Termin einer Serie wird im Dialog des Termins verschoben, nicht durch Ziehen.
+calendar.move.layer=Dieser Eintrag gehört zu einem anderen Kalender und wird dort geändert.
+calendar.delete.refused=Termine werden auf ihrer Seite gelöscht.
+upcoming.label=Demnächst
+upcoming.none=In den nächsten Tagen nichts
+
+# layers
+source.label=Kalender
+source.own=Die Termine dieses Workspaces
+source.add.label=Kalender einbinden…
+source.add.title=Kalender einbinden
+source.add.submit=Einbinden
+source.add.done=Der Kalender „{0}“ ist eingebunden.
+source.name.label=Name
+source.name.placeholder=Name des Kalenders
+source.name.required=Geben Sie dem Kalender einen Namen.
+source.kind.label=Anzeigen
+source.kind.workspace=Die Termine eines Workspaces
+source.kind.query=Die Objekte einer WQL-Abfrage
+source.kind.required=Wählen Sie, was der Kalender zeigt.
+source.color.label=Farbe
+source.workspace.label=Workspace
+source.workspace.help=Die Termine dieses Workspaces werden gezeigt, soweit der jeweilige Leser sie sehen darf.
+source.workspace.required=Wählen Sie einen Workspace, den Sie lesen dürfen.
+source.workspace.self=Die eigenen Termine des Workspaces werden immer gezeigt.
+source.query.label=WQL-Abfrage
+source.query.help=Termine erscheinen zu ihrer Zeit, andere Objekte (zum Beispiel Issues) an den Tagen der Start- und Enddatumsfelder ihrer Klasse.
+source.query.placeholder=Kind = "issue" AND Assignee = currentUser()
+source.query.required=Schreiben Sie die Abfrage.
+source.query.invalid=Die Abfrage ist kein gültiges WQL.
+source.invalid=Der Kalender ist nicht gültig.
+source.delete.title=Kalender entfernen
+source.delete.submit=Entfernen
+source.delete.prolog=Den Kalender „{0}“ aus diesem Kalender entfernen?
+source.delete.description=Entfernt wird nur die Ebene; die Termine und Objekte, die sie gezeigt hat, bleiben, wo sie sind.
+source.delete.done=Der Kalender „{0}“ wurde entfernt.
+
+# appointment dialog
+appointment.add.label=Neuer Termin
+appointment.add.title=Neuer Termin
+appointment.add.submit=Planen
+appointment.add.done={0} „{1}“ ist geplant.
+appointment.new.title=Neuer Termin
+appointment.edit.label=Termin bearbeiten
+appointment.edit.title=Termin bearbeiten
+appointment.edit.submit=Speichern
+appointment.edit.done={0} „{1}“ wurde gespeichert.
+appointment.tab.general=Termin
+appointment.tab.series=Serie
+appointment.tab.participants=Teilnehmer
+appointment.tab.resources=Ressourcen
+appointment.summary.label=Titel
+appointment.summary.placeholder=Worum geht es bei dem Termin?
+appointment.summary.required=Geben Sie dem Termin einen Titel.
+appointment.class.label=Art
+appointment.class.help=Die Terminklasse, in der der Termin angelegt wird.
+appointment.class.required=Wählen Sie eine Art, in der Sie Termine anlegen dürfen.
+appointment.start.label=Beginn
+appointment.start.required=Geben Sie das Datum des Beginns an.
+appointment.starttime.label=von
+appointment.end.label=Ende
+appointment.endtime.label=bis
+appointment.end.before=Das Ende liegt vor dem Beginn.
+appointment.allday.label=Ganztägig
+appointment.allday.help=Der Termin umfasst ganze Tage; die Uhrzeiten werden nicht verwendet.
+appointment.timezone.label=Zeitzone
+appointment.timezone.help=Die Zeiten werden in dieser Zone eingegeben, und eine Serie wiederholt sich in ihr.
+appointment.autoclose.label=Nach Ablauf schließen
+appointment.autoclose.help=Setzt den Termin in seinen abschließenden Status, sobald sein letztes Vorkommen vorbei ist.
+appointment.location.label=Ort
+appointment.location.placeholder=Raum, Adresse oder Besprechungslink
+appointment.description.label=Beschreibung
+appointment.repeat.label=Wiederholung
+appointment.repeat.none=Keine Wiederholung
+appointment.repeat.daily=Täglich
+appointment.repeat.weekly=Wöchentlich
+appointment.repeat.monthly=Monatlich
+appointment.repeat.yearly=Jährlich
+appointment.repeat.custom=Eigene Regel
+appointment.interval.label=Alle
+appointment.interval.help=1 wiederholt jeden Tag, jede Woche, jeden Monat oder jedes Jahr; 2 jeden zweiten.
+appointment.weekdays.label=Am
+appointment.weekdays.help=Die Wochentage einer wöchentlichen Serie; keiner bedeutet den Wochentag des Beginns.
+appointment.until.label=Endet am
+appointment.until.help=Der letzte Tag der Serie. Leer lassen für eine Serie ohne Ende.
+appointment.count.label=Endet nach
+appointment.count.help=Die Anzahl der Termine; hat Vorrang vor dem Enddatum.
+appointment.rule.label=Regel (RFC 5545)
+appointment.rule.help=Eine Wiederholungsregel, wie Kalender sie schreiben, zum Beispiel FREQ=MONTHLY;BYDAY=2TU (jeden zweiten Dienstag). Gilt bei „Eigene Regel“.
+appointment.rule.invalid=Die Regel ist keine Wiederholungsregel nach RFC 5545, die dieser Kalender versteht.
+weekday.mo=Montag
+weekday.tu=Dienstag
+weekday.we=Mittwoch
+weekday.th=Donnerstag
+weekday.fr=Freitag
+weekday.sa=Samstag
+weekday.su=Sonntag
+
+# templates
+template.label=Vorlage
+template.help=Übernimmt Titel, Beschreibung, Uhrzeit, Dauer, Ort, Serie, Teilnehmer und Ressourcen, die die Vorlage vorgibt.
+template.none=Keine Vorlage
+template.header=Aus Vorlage
+
+# participants
+participant.label=Teilnehmer
+participant.help=Die eingeladenen Konten. Sie sehen den Termin, folgen ihm und sagen zu oder ab.
+participant.placeholder=Personen einladen…
+participant.header=Teilnehmer
+participant.none=Niemand ist eingeladen.
+participant.you=Sie
+participant.guest=Gast
+guest.label=Gäste
+guest.help=Personen ohne Konto, getrennt durch Semikolons: ein Name, eine Mailadresse oder Name <Mail>.
+response.pending=Noch keine Antwort
+response.accepted=Zugesagt
+response.tentative=Unter Vorbehalt zugesagt
+response.declined=Abgesagt
+role.required=Erforderlich
+role.optional=Optional
+role.chair=Organisator
+
+# resources
+resource.label=Ressourcen
+resource.help=Räume, Geräte, Fahrzeuge – die Assets der Installation. Eine Ressource kann zur selben Zeit nur einmal gebucht werden.
+resource.placeholder=Ressource buchen…
+resource.header=Ressourcen
+
+# conflicts
+conflict.title=Terminkonflikte
+conflict.none=Keine Konflikte.
+conflict.checking=Konflikte werden geprüft…
+conflict.participant={0} nimmt am {1} an {2} teil.
+conflict.resource={0} ist am {1} für {2} gebucht.
+conflict.private=einem anderen Termin
+conflict.override=Trotzdem buchen, um sich darüber hinwegzusetzen.
+conflict.ignore.label=Trotz Konflikten buchen
+conflict.ignore.help=Bucht Ressourcen auch dann, wenn sie zur selben Zeit für einen anderen Termin gebucht sind.
+
+# answer
+respond.title=Antworten
+respond.submit=Antworten
+respond.accepted=Zusagen
+respond.tentative=Unter Vorbehalt
+respond.declined=Absagen
+respond.response.label=Ihre Antwort
+respond.required=Wählen Sie eine Antwort.
+respond.comment.label=Vorbehalt oder Grund
+respond.comment.help=Was der Organisator wissen sollte: unter welcher Bedingung Sie kommen oder warum nicht.
+respond.comment.placeholder=Ich kann erst ab 10:30 Uhr dabei sein.
+respond.reservation.required=Nennen Sie Ihren Vorbehalt.
+respond.done.accepted=Sie haben „{0}“ zugesagt.
+respond.done.tentative=Sie haben „{0}“ unter Vorbehalt zugesagt.
+respond.done.declined=Sie haben „{0}“ abgesagt.
+
+# schedule card
+schedule.header=Zeitplan
+schedule.none=Der Termin hat noch keine Zeit. Bearbeiten Sie ihn, um eine zu planen.
+schedule.when=Wann
+schedule.series=Wiederholung
+schedule.next=Nächster Termin
+schedule.next.none=Keiner – die Serie ist vorbei
+schedule.exceptions=Entfernte Termine
+schedule.zone=Geplant in
+schedule.location=Ort
+schedule.organizer=Organisator
+schedule.autoclose=Abschluss
+schedule.autoclose.on=Wird nach Ablauf automatisch geschlossen
+schedule.autoclose.off=Bleibt nach Ablauf offen
+schedule.autoclose.closed=Automatisch geschlossen am {0}
+
+# series in words
+recurrence.daily=Täglich
+recurrence.daily.every=Alle {0} Tage
+recurrence.weekly=Wöchentlich
+recurrence.weekly.every=Alle {0} Wochen
+recurrence.monthly=Monatlich
+recurrence.monthly.every=Alle {0} Monate
+recurrence.yearly=Jährlich
+recurrence.yearly.every=Alle {0} Jahre
+recurrence.on=am {0}
+recurrence.day=am {0}.
+recurrence.in=im {0}
+recurrence.last=letzter {0}
+recurrence.count={0} Termine
+recurrence.until=bis {0}
+
+# exclude
+exclude.label=Termin entfernen
+exclude.title=Einen Termin der Serie entfernen
+exclude.submit=Entfernen
+exclude.occurrence.label=Termin
+exclude.occurrence.help=Nur dieser Termin wird entfernt; die Serie läuft weiter.
+exclude.required=Wählen Sie einen Termin der Serie.
+exclude.done=Der Termin am {0} wurde entfernt.
+
+# import and export
+import.label=iCalendar importieren…
+import.title=iCalendar-Datei importieren
+import.submit=Importieren
+import.class.help=Neue Termine werden in dieser Art angelegt; früher importierte Termine werden aktualisiert.
+import.file.label=Datei
+import.file.help=Eine .ics-Datei, wie Outlook, Google, Apple und Thunderbird sie exportieren.
+import.content.label=Inhalt
+import.content.help=Wird aus der Datei gefüllt – oder fügen Sie den Inhalt einer Kalenderdatei ein.
+import.empty=Wählen Sie eine Kalenderdatei oder fügen Sie ihren Inhalt ein.
+import.done={0} Termine angelegt, {1} aktualisiert, {2} übersprungen.
+export.label=Als iCalendar exportieren
+export.layers.label=Mit eingebundenen Kalendern exportieren
+export.format.label=iCalendar
+export.format.description=Ein Termin für Outlook, Google, Apple oder Thunderbird.
+export.format.content=Zeit, Serie, Ort, Teilnehmer und Antworten; andere Objekte an ihren Daten
+
+# workspace template
+template.teamcalendar.name=Teamkalender
+template.teamcalendar.description=Besprechungen und Termine eines Teams in einem Kalender: Serien, Teilnehmer mit Zu- und Absagen, buchbare Ressourcen und Terminkonflikte.
+template.teamcalendar.class.meeting=Eine Besprechung, ein Termin oder ein Ereignis des Teams.
+template.field.description=Worum es bei dem Termin geht.
+template.field.status=Wo der Termin steht.
+template.field.labels=Schlagwörter zum Filtern und Gruppieren.
+template.workflow.name=Termin
+template.workflow.description=Von geplant bis abgehalten oder abgesagt; nach Ablauf automatisch geschlossen.
+template.status.planned=Geplant
+template.status.planned.description=Der Termin ist geplant.
+template.status.confirmed=Bestätigt
+template.status.confirmed.description=Der Termin findet wie geplant statt.
+template.status.held=Abgehalten
+template.status.held.description=Der Termin hat stattgefunden.
+template.status.cancelled=Abgesagt
+template.status.cancelled.description=Der Termin findet nicht statt.
+template.transition.confirm=Bestätigen
+template.transition.hold=Als abgehalten markieren
+template.transition.cancel=Absagen
+template.transition.reschedule=Neu planen
